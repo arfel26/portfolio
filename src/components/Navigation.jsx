@@ -24,7 +24,7 @@ function Navigation() {
       <nav className="navigation text-gray-200 bg-gray-900">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           <a href="/">
-            <span className="self-center text-2xl font-semibold whitespace-nowrap transition-all hover:-translate-1 hover:text-blue-700 duration-500">
+            <span className="self-center text-2xl font-medium whitespace-nowrap transition-all hover:-translate-1 hover:text-blue-700 duration-500">
               Arianne Manibo
             </span>
           </a>

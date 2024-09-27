@@ -18,7 +18,7 @@ function About() {
             className="left flex justify-center items-center"
           >
             <img
-              src="../public/gradpic.JPEG"
+              src="gradpic.jpeg"
               className="w-full h-auto max-w-[300px] max-h-[300px] lg:max-w-[500px] lg:max-h-[500px] p-3 lg:p-5 rounded-full border-4 border-blue-700"
               alt=""
             />
@@ -36,10 +36,10 @@ function About() {
             </h1>
             <h1 className="text-blue-700">Web Developer</h1>
             <p className="text-gray-200 text-justify">
-              A passionate Junior Web Developer Lorem ipsum dolor sit amet
-              consectetur adipisicing elit. Repellendus repudiandae maiores
-              eaque qui architecto, saepe nesciunt consectetur quam temporibus
-              at? Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              A passionate Junior Web Developer with experience in creating
+              cross-platform websites and currently practicing ReactJS. Eager to
+              learn and enhance skills in web development, I’m excited to tackle
+              new challenges and contribute to innovative projects.
             </p>
           </motion.div>
         </div>

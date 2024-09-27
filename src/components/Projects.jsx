@@ -41,10 +41,12 @@ function Projects() {
                 </div>
               </div>
               <p className="text-lg md:text-2xl">
-                Isabook is a library Lorem ipsum dolor sit, amet consectetur
-                adipisicing elit. Quibusdam veritatis culpa at iusto ad
-                doloremque sit rem odit. Veniam, voluptatum. Lorem ipsum dolor
-                sit amet consectetur adipisicing elit. Earum, veritatis!
+                Isabook is an online platform that acts like a digital library,
+                allowing users to browse and access information about a wide
+                range of books. Users can search for titles, and read synopsis.
+                Isabook aims to make it easy for readers to discover new books,
+                and connect with their favorite genres, all in one convenient
+                place.
               </p>
               <a
                 href="https://arfel26.github.io/isabook/"
@@ -87,12 +89,17 @@ function Projects() {
                 </div>
               </div>
               <p className="text-lg md:text-2xl">
-                Donate4NE Lorem ipsum dolor sit, amet consectetur adipisicing
-                elit. Quibusdam veritatis culpa at iusto ad doloremque sit rem
-                odit. Veniam, voluptatum. Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Earum, veritatis!
+                Donate4NE is a cross-platform management donation application
+                for non-government organization in Nueva Ecija. It connects
+                donors with those in need, making it easy to give items and
+                raise funds. The platform helps collect and distribute essential
+                items and allows NGOs to run fundraising campaigns.
               </p>
-              <a href="#" target="_blank" className="">
+              <a
+                href="https://drive.google.com/file/d/15BXpLGdQJ6U0_B5zv-JJZJFx4oEbUM7U/view?usp=drive_link"
+                target="_blank"
+                className=""
+              >
                 <button className="border-2 border-blue-700 p-2 text-lg md:text-xl my-4 transition-all hover:-translate-1 hover:bg-blue-600 duration-300 rounded-md ">
                   Walkthrough
                 </button>
