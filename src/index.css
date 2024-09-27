@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Poppins";
+  src: url(../src/fonts/Poppins-Regular.ttf);
+}
+
+* {
+  /* background-color: #1f1f1f; */
+  font-family: Poppins;
+}
+
+/* .skills .skill {
+  transition: transform 1s;
+}
+
+.skills .skill:hover {
+  transform: scale(1.1);
+} */
+
+/* .spacing {
+  margin-left: 9rem;
+  margin-right: 9rem;
+  margin-top: 2rem;
+} */
