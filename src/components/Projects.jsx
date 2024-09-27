@@ -41,10 +41,10 @@ function Projects() {
                 </div>
               </div>
               <p className="text-lg md:text-2xl">
-                Isabook is an online platform that acts like a digital library,
+                Isabook is an online platform that serves as a digital library,
                 allowing users to browse and access information about a wide
-                range of books. Users can search for titles, and read synopsis.
-                Isabook aims to make it easy for readers to discover new books,
+                range of books. Users can search for titles and read synopsis.
+                Isabook aims to make it easy for readers to discover new books
                 and connect with their favorite genres, all in one convenient
                 place.
               </p>
@@ -89,11 +89,12 @@ function Projects() {
                 </div>
               </div>
               <p className="text-lg md:text-2xl">
-                Donate4NE is a cross-platform management donation application
-                for non-government organization in Nueva Ecija. It connects
-                donors with those in need, making it easy to give items and
-                raise funds. The platform helps collect and distribute essential
-                items and allows NGOs to run fundraising campaigns.
+                Donate4NE is a cross-platform donation management application
+                for Non-Government Organizations (NGOs) in Nueva Ecija. It
+                connects donors with those in need, making it easy to donate
+                items and raise funds. The platform helps in collecting and
+                distributing essential items and allows NGOs to run fundraising
+                campaigns.
               </p>
               <a
                 href="https://drive.google.com/file/d/15BXpLGdQJ6U0_B5zv-JJZJFx4oEbUM7U/view?usp=drive_link"

@@ -54,9 +54,9 @@ function Contact() {
             >
               <ul className="space-y-5">
                 <li className="text-2xl text-justify">
-                  I’m excited to collaborate on your next project or explore job
-                  opportunities. If you’re looking for freelance work, let’s
-                  build something amazing together!
+                  I am thrilled to collaborate on your upcoming project or
+                  explore job opportunities. If you’re seeking freelance work,
+                  let’s create something amazing together!
                 </li>
                 <li className="flex text-lg items-center space-x-3">
                   <svg

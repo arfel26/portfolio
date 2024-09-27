@@ -38,8 +38,8 @@ function About() {
             <p className="text-gray-200 text-justify">
               A passionate Junior Web Developer with experience in creating
               cross-platform websites and currently practicing ReactJS. Eager to
-              learn and enhance skills in web development, I’m excited to tackle
-              new challenges and contribute to innovative projects.
+              learn and enhance skills in web development. I’m also excited to
+              tackle new challenges and contribute to innovative projects.
             </p>
           </motion.div>
         </div>
