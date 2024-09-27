@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Resume from "../../public/Resume.pdf";
+import Resume from "/Resume.pdf";
 
 function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
