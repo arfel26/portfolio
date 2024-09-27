@@ -66,7 +66,7 @@ function Projects() {
             viewport={{ once: false, amount: 0.5 }}
             className="grid grid-cols-1 lg:grid-cols-2 md:p-3 lg:p-5 gap-5"
           >
-            <div className="border-4 border-blue-700">
+            <div className="border-4 border-blue-700 m-auto">
               <img src="donate4ne.png" alt="" />
             </div>
             <div className="md:p-3 space-y-2 md:space-y-4 text-justify">
