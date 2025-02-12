@@ -4,5 +4,7 @@ Welcome to my portfolio! I'm a Web Developer with expertise in HTML, CSS, JavaSc
 
 # 🛠️ Skills
 Frontend: HTML, CSS, JavaScript, React.js, Bootstrap, TailwindCSS
+
 Backend: Node.js, PHP, MySQL, PL/SQL, SQL
+
 Tools & Others: RESTful APIs, Photoshop, Premiere Pro, Oracle HCM Processes, Oracle Guided Learning Content Development, API Integrations, Problem Solving
