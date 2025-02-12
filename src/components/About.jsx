@@ -36,10 +36,10 @@ function About() {
             </h1>
             <h1 className="text-blue-700">Web Developer</h1>
             <p className="text-gray-200 text-justify">
-              A passionate Junior Web Developer with experience in creating
-              cross-platform websites and currently practicing ReactJS. Eager to
-              learn and enhance skills in web development. I’m also excited to
-              tackle new challenges and contribute to innovative projects.
+              Web Developer with expertise in HTML, CSS, JavaScript, React.js,
+              Node.js, and SQL (including PL/SQL and MySQL). Skilled in API
+              integrations and building responsive websites. Passionate about
+              continuous learning and solving new challenges.
             </p>
           </motion.div>
         </div>

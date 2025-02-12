@@ -27,6 +27,43 @@ function Projects() {
             className="grid grid-cols-1 lg:grid-cols-2 md:p-3 lg:p-5 gap-5"
           >
             <div className="border-4 border-blue-700 m-auto">
+              <img src="guessgame.png" alt="" />
+            </div>
+            <div className="md:p-3 space-y-2 md:space-y-4 text-justify">
+              <h1 className="text-xl md:text-3xl">Guessing Game</h1>
+              <div className="">
+                <div className="flex flex-wrap space-x-2">
+                  {["React", "TailwindCSS"].map((progLanguage) => (
+                    <h1 className="text-lg py-1 px-2 rounded-lg bg-blue-700 transition-all hover:-translate-1 hover:bg-blue-600 duration-300 cursor-pointer mr-2 my-2 lg:me-3">
+                      {progLanguage}
+                    </h1>
+                  ))}
+                </div>
+              </div>
+              <p className="text-lg md:text-2xl">
+                A sweet and simple guessing game made just for my girlfriend on
+                Valentine's Day. Once she guesses the special word, a heartfelt
+                Valentine’s proposal will be revealed!
+              </p>
+              <a
+                href="https://arfel26.github.io/guess-game/"
+                target="_blank"
+                className=""
+              >
+                <button className="border-2 border-blue-700 p-2 text-lg md:text-xl my-4 transition-all hover:-translate-1 hover:bg-blue-600 duration-300 rounded-md">
+                  Live
+                </button>
+              </a>
+            </div>
+          </motion.div>
+          <motion.div
+            variants={fadeIn("down", 0.3)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.5 }}
+            className="grid grid-cols-1 lg:grid-cols-2 md:p-3 lg:p-5 gap-5"
+          >
+            <div className="border-4 border-blue-700 m-auto">
               <img src="isabook.png" alt="" />
             </div>
             <div className="md:p-3 space-y-2 md:space-y-4 text-justify">
