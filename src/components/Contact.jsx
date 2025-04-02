@@ -10,7 +10,7 @@ function Contact() {
     setResult("Sending....");
     const formData = new FormData(event.target);
 
-    formData.append("access_key", "bb5ec668-6eae-4163-bc07-772aec87d4db");
+    formData.append("access_key", import.meta.env.VITE_WEB3_ACCESS_KEY);
 
     const response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
@@ -31,25 +31,24 @@ function Contact() {
     <div>
       <section
         id="contact"
-        className="contact mx-4 my-6 md:my-8 md:mx-6 lg:my-12 lg:mx-48"
+        className="contact mx-6 md:mx-auto md:w-11/12 lg:max-w-screen-2xl flex flex-wrap items-center justify-center"
       >
         <div className="flex flex-col p-5 text-gray-200 space-y-5">
           <motion.h1
             variants={fadeIn("down", 0.3)}
             initial="hidden"
             whileInView={"show"}
-            exit="hidden"
-            viewport={{ once: false, amount: 0.5 }}
+            viewport={{ once: true, amount: 0.75 }}
             className="text-4xl lg:text-5xl text-center"
           >
             Contact
           </motion.h1>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-2 lg:gap-5">
             <motion.div
-              variants={fadeIn("down", 0.3)}
+              variants={fadeIn("right", 0.3)}
               initial="hidden"
               whileInView={"show"}
-              viewport={{ once: false, amount: 0.5 }}
+              viewport={{ once: true, amount: 0.75 }}
               className="left md:p-3 lg:p-5"
             >
               <ul className="space-y-5">
@@ -130,12 +129,11 @@ function Contact() {
               </ul>
             </motion.div>
             <hr className="block md:hidden" />
-            {/* <div> */}{" "}
             <motion.div
-              variants={fadeIn("down", 0.3)}
+              variants={fadeIn("left", 0.3)}
               initial="hidden"
               whileInView={"show"}
-              viewport={{ once: false, amount: 0.5 }}
+              viewport={{ once: true, amount: 0.75 }}
               className="right form md:p-3 lg:p-5"
             >
               <form onSubmit={onSubmit} className="space-y-4 lg:space-y-3">
@@ -154,7 +152,7 @@ function Contact() {
                 <div className="flex justify-end">
                   <button
                     type="submit"
-                    className="border-2 border-blue-700 p-2 rounded-md transition-all hover:-translate-1 hover:bg-blue-600 duration-300"
+                    className="p-2 md:text-xl my-4 transition-all hover:-translate-1 bg-blue-700 hover:bg-blue-800 hover:scale-110 duration-500 rounded-md"
                   >
                     Send
                   </button>

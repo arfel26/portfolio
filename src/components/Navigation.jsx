@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Resume from "/Resume.pdf";
 
 function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
@@ -22,7 +21,7 @@ function Navigation() {
   return (
     <div>
       <nav className="navigation text-gray-200 bg-gray-900">
-        <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+        <div className="max-w-screen-2xl flex flex-wrap items-center justify-between mx-auto p-4">
           <a href="/">
             <span className="self-center text-2xl font-medium whitespace-nowrap transition-all hover:-translate-1 hover:text-blue-700 duration-500">
               Arianne Manibo
@@ -90,16 +89,6 @@ function Navigation() {
                   onClick={handleScroll}
                 >
                   Contact
-                </a>
-              </li>
-              <li>
-                <a
-                  href={Resume}
-                  className="block py-2 px-3 transition-all hover:-translate-1 hover:text-blue-700 duration-500"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Resume
                 </a>
               </li>
             </ul>

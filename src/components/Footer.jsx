@@ -1,7 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
-import Resume from "../../public/Resume.pdf";
 
 function Footer() {
   const handleScroll = (e) => {
@@ -21,7 +20,7 @@ function Footer() {
           variants={fadeIn("down", 0.3)}
           initial="hidden"
           whileInView={"show"}
-          viewport={{ once: false, amount: 0.25 }}
+          viewport={{ once: true, amount: 0.75 }}
           className="flex justify-center items-center flex-col space-y-3"
         >
           <ul className="hidden md:flex md:space-x-8">
@@ -64,16 +63,7 @@ function Footer() {
                 Contact
               </a>
             </li>
-            <li>
-              {" "}
-              <a
-                href={Resume}
-                target="_blank"
-                className="transition-all hover:-translate-1 hover:text-blue-700 duration-500"
-              >
-                Resume
-              </a>
-            </li>
+            z
           </ul>
           <hr className="hidden md:w-[70%] ld:w-[40%]" />
           <ul>

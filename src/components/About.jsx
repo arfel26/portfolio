@@ -7,39 +7,40 @@ function About() {
     <div>
       <section
         id="about"
-        className="about mx-4 my-6 md:my-8 md:mx-6 lg:my-12 lg:mx-48"
+        className="about mx-6 md:mx-auto md:w-11/12 lg:max-w-screen-2xl flex items-center justify-between"
       >
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-4 lg:py-0">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-4 gap-4 md:h-[40vh] lg:h-[60vh]">
           <motion.div
-            variants={fadeIn("down", 0.3)}
+            variants={fadeIn("right", 0.2)}
             initial="hidden"
             whileInView={"show"}
-            viewport={{ once: false, amount: 0.75 }}
-            className="left flex justify-center items-center"
+            viewport={{ once: true }}
+            className="left flex justify-center items-center p-2"
           >
             <img
               src="gradpic.jpeg"
               className="w-full h-auto max-w-[300px] max-h-[300px] lg:max-w-[500px] lg:max-h-[500px] p-3 lg:p-5 rounded-full border-4 border-blue-700"
-              alt=""
+              alt="Grad pic"
             />
           </motion.div>
           <motion.div
-            variants={fadeIn("down", 0.3)}
+            variants={fadeIn("left", 0.2)}
             initial="hidden"
             whileInView={"show"}
-            viewport={{ once: false, amount: 0.75 }}
-            className="right flex flex-col justify-center p-2 space-y-2 md:space-y-3 lg:col-span-2 lg:p-7 text-base lg:text-2xl lg:h-[60vh]"
+            viewport={{ once: true }}
+            className="right flex flex-col justify-center p-2 space-y-2 md:space-y-3 lg:col-span-2 lg:p-7 text-base md:text-xl lg:text-2xl"
           >
             <h1 className="text-gray-400">Hello! My name is</h1>
             <h1 className="text-gray-200 text-3xl md:text-4xl">
               Arianne Felize Manibo
             </h1>
-            <h1 className="text-blue-700">Web Developer</h1>
+            <h1 className="text-blue-700">Associate Software Engineer</h1>
             <p className="text-gray-200 text-justify">
-              Web Developer with expertise in HTML, CSS, JavaScript, React.js,
-              Node.js, and SQL (including PL/SQL and MySQL). Skilled in API
-              integrations and building responsive websites. Passionate about
-              continuous learning and solving new challenges.
+              With expertise in HTML, CSS, JavaScript, React.js, Vite.js,
+              Node.js, Express.js, SQL (MySQL, PL/SQL), and PHP. Skilled in API
+              integrations, responsive web development, Oracle Fusion Data
+              Modeling & Reports, and UX/UI design. Passionate about learning
+              and solving complex challenges.
             </p>
           </motion.div>
         </div>
