@@ -63,7 +63,6 @@ function Footer() {
                 Contact
               </a>
             </li>
-            z
           </ul>
           <hr className="hidden md:w-[70%] ld:w-[40%]" />
           <ul>
