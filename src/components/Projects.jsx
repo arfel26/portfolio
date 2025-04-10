@@ -39,7 +39,6 @@ function Projects() {
                 {[
                   "React.js (Vite.js)",
                   "Node.js (Express.js)",
-                  "JavaScript",
                   "MySql",
                   "NodeMailer",
                   "TailwindCSS",
@@ -83,7 +82,7 @@ function Projects() {
             <div className="md:p-3 space-y-2 md:space-y-4 text-justify">
               <h1 className="text-xl md:text-3xl">Guessing Game</h1>
               <div className="flex flex-wrap justify-start text-base md:text-xl lg:text-2xl">
-                {["React", "TailwindCSS"].map((progLanguage) => (
+                {["React.js (Vite.js)", "TailwindCSS"].map((progLanguage) => (
                   <h1 className="text-lg px-2 py-1 transition-all hover:-translate-1 hover:scale-110 border-2 border-blue-700 duration-500 cursor-pointer rounded-md ml-0 mr-3 my-1">
                     {progLanguage}
                   </h1>
@@ -126,12 +125,61 @@ function Projects() {
             className="grid grid-cols-1 lg:grid-cols-2 md:p-3 lg:p-5 gap-4"
           >
             <div className="border-4 border-blue-700 m-auto">
+              <img src="jdonut.png" alt="" />
+            </div>
+            <div className="md:p-3 space-y-2 md:space-y-4 text-justify">
+              <h1 className="text-xl md:text-3xl">Just Donut</h1>
+              <div className="flex flex-wrap justify-start text-base md:text-xl lg:text-2xl">
+                {["React.js (Vite.js)", "TailwindCSS"].map((progLanguage) => (
+                  <h1 className="text-lg px-2 py-1 transition-all hover:-translate-1 hover:scale-110 border-2 border-blue-700 duration-500 cursor-pointer rounded-md ml-0 mr-3 my-1">
+                    {progLanguage}
+                  </h1>
+                ))}
+              </div>
+              <p className="text-lg md:text-2xl">
+                A simple and responsive website featuring a homepage, a menu
+                with a variety of donut options, and an about page sharing the
+                brand’s story. Designed with clean navigation and a playful,
+                food-themed layout to match the vibe of a donut shop.
+              </p>
+              <div className="flex buttons space-x-3">
+                <a
+                  href="https://github.com/arfel26/j-donut"
+                  target="_blank"
+                  className=""
+                >
+                  <button className="flex items-center text-center py-2 px-4 text-lg md:text-xl my-4 transition-all hover:-translate-1 bg-blue-700 hover:bg-blue-800 hover:scale-110 duration-500 rounded-md">
+                    <FaCode className="me-2" />
+                    <span>Code</span>
+                  </button>
+                </a>
+                <a
+                  href="https://arfel26.github.io/j-donut/"
+                  target="_blank"
+                  className=""
+                >
+                  <button className="flex items-center text-center py-2 px-4 text-lg md:text-xl my-4 transition-all hover:-translate-1 bg-blue-700 hover:bg-blue-800 hover:scale-110 duration-500 rounded-md">
+                    <HiExternalLink className="me-2" />
+                    <span>Live</span>
+                  </button>
+                </a>
+              </div>
+            </div>
+          </motion.div>
+          <motion.div
+            variants={fadeIn("down", 0.3)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: true, amount: 0.75 }}
+            className="grid grid-cols-1 lg:grid-cols-2 md:p-3 lg:p-5 gap-4"
+          >
+            <div className="border-4 border-blue-700 m-auto">
               <img src="isabook.png" alt="" />
             </div>
             <div className="md:p-3 space-y-2 md:space-y-4 text-justify">
               <h1 className="text-xl md:text-3xl">IsaBook</h1>
               <div className="flex flex-wrap justify-start text-base md:text-xl lg:text-2xl">
-                {["React", "TailwindCSS"].map((progLanguage) => (
+                {["React.js (Vite.js)", "TailwindCSS"].map((progLanguage) => (
                   <h1 className="text-lg px-2 py-1 transition-all hover:-translate-1 hover:scale-110 border-2 border-blue-700 duration-500 cursor-pointer rounded-md ml-0 mr-3 my-1">
                     {progLanguage}
                   </h1>
