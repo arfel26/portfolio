@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
+import { Link } from "react-router-dom";
 
 function Footer() {
   const handleScroll = (e) => {
@@ -17,7 +18,7 @@ function Footer() {
     <div>
       <footer className="mx-auto w-full p-4 py-6 lg:py-8 bg-slate-900 text-gray-200 text-lg">
         <motion.div
-          variants={fadeIn("down", 0.3)}
+          variants={fadeIn("down", 0.1)}
           initial="hidden"
           whileInView={"show"}
           viewport={{ once: true, amount: 0.75 }}
@@ -25,43 +26,28 @@ function Footer() {
         >
           <ul className="hidden md:flex md:space-x-8">
             <li>
-              <a
-                href="#about"
+              <Link
+                to="/"
                 className="transition-all hover:-translate-1 hover:text-blue-700 duration-500"
-                onClick={handleScroll}
               >
                 About
-              </a>
+              </Link>
             </li>
             <li>
-              {" "}
-              <a
-                href="#skills"
+              <Link
+                to="/projects"
                 className="transition-all hover:-translate-1 hover:text-blue-700 duration-500"
-                onClick={handleScroll}
-              >
-                Skills
-              </a>
-            </li>
-            <li>
-              {" "}
-              <a
-                href="#projects"
-                className="transition-all hover:-translate-1 hover:text-blue-700 duration-500"
-                onClick={handleScroll}
               >
                 Projects
-              </a>
+              </Link>
             </li>
             <li>
-              {" "}
-              <a
-                href="#contact"
+              <Link
+                to="/contact"
                 className="transition-all hover:-translate-1 hover:text-blue-700 duration-500"
-                onClick={handleScroll}
               >
                 Contact
-              </a>
+              </Link>
             </li>
           </ul>
           <hr className="hidden md:w-[70%] ld:w-[40%]" />

@@ -3,31 +3,36 @@ import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
 import { HiExternalLink } from "react-icons/hi";
 import { FaCode } from "react-icons/fa";
-import { Link } from "react-router-dom";
 
 function Projects() {
   return (
     <div>
-      <section
-        id="projects"
-        className="projects mx-6 md:mx-auto md:w-11/12 lg:max-w-screen-2xl flex flex-wrap items-center justify-center"
-      >
-        <div className="text-gray-200 space-y-5">
-          <motion.h1
-            variants={fadeIn("down", 0.3)}
+      <section className="projects mx-6 md:mx-auto md:w-11/12 lg:max-w-screen-2xl flex flex-wrap items-center justify-center">
+        <div className="text-gray-200 space-y-3">
+          <motion.div
+            variants={fadeIn("down", 0.1)}
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: true, amount: 0.75 }}
-            className="text-4xl lg:text-5xl text-center"
+            className="project-title space-y-4"
           >
-            Projects
-          </motion.h1>
-          <div className="projects">
-            <motion.div
-              variants={fadeIn("down", 0.3)}
+            <h1 className="text-4xl lg:text-5xl text-center">Projects</h1>
+            <h2
+              variants={fadeIn("down", 0.1)}
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: true, amount: 0.75 }}
+              className="text-3xl lg:text-4xl text-center"
+            >
+              Web Development
+            </h2>
+          </motion.div>
+          <div className="web-dev-projects space-y-5 lg:space-y-2">
+            <motion.div
+              variants={fadeIn("down", 0.1)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: true, amount: 0.25 }}
               className="grid grid-cols-1 lg:grid-cols-2 md:p-3 lg:p-5 gap-4"
             >
               <div className="border-4 border-blue-700 m-auto">
@@ -73,10 +78,10 @@ function Projects() {
               </div>
             </motion.div>
             <motion.div
-              variants={fadeIn("down", 0.3)}
+              variants={fadeIn("down", 0.1)}
               initial="hidden"
               whileInView={"show"}
-              viewport={{ once: true, amount: 0.75 }}
+              viewport={{ once: true, amount: 0.25 }}
               className="grid grid-cols-1 lg:grid-cols-2 md:p-3 lg:p-5 gap-4"
             >
               <div className="border-4 border-blue-700 m-auto">
@@ -121,10 +126,110 @@ function Projects() {
               </div>
             </motion.div>
             <motion.div
-              variants={fadeIn("down", 0.3)}
+              variants={fadeIn("down", 0.1)}
               initial="hidden"
               whileInView={"show"}
-              viewport={{ once: true, amount: 0.75 }}
+              viewport={{ once: true, amount: 0.25 }}
+              className="grid grid-cols-1 lg:grid-cols-2 md:p-3 lg:p-5 gap-4"
+            >
+              <div className="border-4 border-blue-700 m-auto">
+                <img src="jdonut.png" alt="" />
+              </div>
+              <div className="md:p-3 space-y-2 md:space-y-4 text-justify">
+                <h1 className="text-xl md:text-3xl">Just Donut</h1>
+                <div className="flex flex-wrap justify-start text-base md:text-xl lg:text-2xl">
+                  {["React.js (Vite.js)", "TailwindCSS"].map((progLanguage) => (
+                    <h1 className="text-lg px-2 py-1 transition-all hover:-translate-1 hover:scale-110 border-2 border-blue-700 duration-500 cursor-pointer rounded-md ml-0 mr-3 my-1">
+                      {progLanguage}
+                    </h1>
+                  ))}
+                </div>
+                <p className="text-lg md:text-2xl">
+                  A simple and responsive website featuring a homepage, a menu
+                  with a variety of donut options, and an about page sharing the
+                  brand’s story. Designed with clean navigation and a playful,
+                  food-themed layout to match the vibe of a donut shop.
+                </p>
+                <div className="flex buttons space-x-3">
+                  <a
+                    href="https://github.com/arfel26/j-donut"
+                    target="_blank"
+                    className=""
+                  >
+                    <button className="flex items-center text-center py-2 px-4 text-lg md:text-xl my-4 transition-all hover:-translate-1 bg-blue-700 hover:bg-blue-800 hover:scale-110 duration-500 rounded-md">
+                      <FaCode className="me-2" />
+                      <span>Code</span>
+                    </button>
+                  </a>
+                  <a
+                    href="https://arfel26.github.io/j-donut/"
+                    target="_blank"
+                    className=""
+                  >
+                    <button className="flex items-center text-center py-2 px-4 text-lg md:text-xl my-4 transition-all hover:-translate-1 bg-blue-700 hover:bg-blue-800 hover:scale-110 duration-500 rounded-md">
+                      <HiExternalLink className="me-2" />
+                      <span>Live</span>
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </motion.div>
+            <motion.div
+              variants={fadeIn("down", 0.1)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: true, amount: 0.25 }}
+              className="grid grid-cols-1 lg:grid-cols-2 md:p-3 lg:p-5 gap-4"
+            >
+              <div className="border-4 border-blue-700 m-auto">
+                <img src="isabook.png" alt="" />
+              </div>
+              <div className="md:p-3 space-y-2 md:space-y-4 text-justify">
+                <h1 className="text-xl md:text-3xl">IsaBook</h1>
+                <div className="flex flex-wrap justify-start text-base md:text-xl lg:text-2xl">
+                  {["React.js (Vite.js)", "TailwindCSS"].map((progLanguage) => (
+                    <h1 className="text-lg px-2 py-1 transition-all hover:-translate-1 hover:scale-110 border-2 border-blue-700 duration-500 cursor-pointer rounded-md ml-0 mr-3 my-1">
+                      {progLanguage}
+                    </h1>
+                  ))}
+                </div>
+                <p className="text-lg md:text-2xl">
+                  Isabook is an online platform that serves as a digital
+                  library, allowing users to browse and access information about
+                  a wide range of books. Users can search for titles and read
+                  synopsis. Isabook aims to make it easy for readers to discover
+                  new books and connect with their favorite genres, all in one
+                  convenient place.
+                </p>
+                <div className="flex buttons space-x-3">
+                  <a
+                    href="https://github.com/arfel26/isabook"
+                    target="_blank"
+                    className=""
+                  >
+                    <button className="flex items-center text-center py-2 px-4 text-lg md:text-xl my-4 transition-all hover:-translate-1 bg-blue-700 hover:bg-blue-800 hover:scale-110 duration-500 rounded-md">
+                      <FaCode className="me-2" />
+                      <span>Code</span>
+                    </button>
+                  </a>
+                  <a
+                    href="https://arfel26.github.io/isabook/"
+                    target="_blank"
+                    className=""
+                  >
+                    <button className="flex items-center text-center py-2 px-4 text-lg md:text-xl my-4 transition-all hover:-translate-1 bg-blue-700 hover:bg-blue-800 hover:scale-110 duration-500 rounded-md">
+                      <HiExternalLink className="me-2" />
+                      <span>Live</span>
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </motion.div>
+            <motion.div
+              variants={fadeIn("down", 0.1)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: true, amount: 0.25 }}
               className="grid grid-cols-1 lg:grid-cols-2 md:p-3 lg:p-5 gap-4"
             >
               <div className="border-4 border-blue-700 m-auto">
@@ -148,11 +253,12 @@ function Projects() {
                   ))}
                 </div>
                 <p className="text-lg md:text-2xl">
-                  A donation management application for Non-Government
-                  Organizations (NGOs) in Nueva Ecija. It connects donors with
-                  those in need, making it easy to donate items and raise funds.
-                  The platform helps in collecting and distributing essential
-                  items and allows NGOs to run fundraising campaigns.
+                  Donate4NE is a cross-platform donation management application
+                  for Non-Government Organizations (NGOs) in Nueva Ecija. It
+                  connects donors with those in need, making it easy to donate
+                  items and raise funds. The platform helps in collecting and
+                  distributing essential items and allows NGOs to run
+                  fundraising campaigns.
                 </p>
                 <div className="buttons space-x-3">
                   <a
@@ -168,12 +274,31 @@ function Projects() {
                 </div>
               </div>
             </motion.div>
-            <motion.div
-              variants={fadeIn("down", 0.3)}
+          </div>
+          <motion.div
+            variants={fadeIn("down", 0.1)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: true, amount: 0.25 }}
+            className="project-title space-y-4"
+          >
+            <h2
+              variants={fadeIn("down", 0.1)}
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: true, amount: 0.75 }}
-              className="grid grid-cols-1 lg:grid-cols-2 md:p-3 lg:p-5 gap-4"
+              className="text-3xl lg:text-4xl text-center"
+            >
+              Web Design
+            </h2>
+          </motion.div>
+          <div className="web-des-projects space-y-5 lg:space-y-2">
+            <motion.div
+              variants={fadeIn("down", 0.1)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: true, amount: 0.25 }}
+              className="grid grid-cols-1 md:p-3 lg:p-5 gap-4"
             >
               <div className="border-2 border-blue-700 p-2 m-auto">
                 <a
@@ -182,7 +307,7 @@ function Projects() {
                   className=""
                 >
                   <img
-                    src="design/game-vault.png"
+                    src="design/game-vault-3.png"
                     className="transition-all hover:-translate-1 hover:scale-95 duration-1000"
                     alt=""
                   />
@@ -190,12 +315,12 @@ function Projects() {
               </div>
               <div className="border-2 border-blue-700 p-2 m-auto">
                 <a
-                  href="https://drive.google.com/drive/folders/1MOLecE-Yt8OOF88jnMbQSz3T1UjSPbRy?usp=drive_linkg"
+                  href="https://drive.google.com/drive/folders/1MOLecE-Yt8OOF88jnMbQSz3T1UjSPbRy?usp=drive_link"
                   target="_blank"
                   className=""
                 >
                   <img
-                    src="design/isa-portfolio.png"
+                    src="design/isa-portfolio-3.png"
                     className="transition-all hover:-translate-1 hover:scale-95 duration-1000"
                     alt=""
                   />
@@ -203,21 +328,6 @@ function Projects() {
               </div>
             </motion.div>
           </div>
-
-          <motion.div
-            variants={fadeIn("down", 0.3)}
-            initial="hidden"
-            whileInView={"show"}
-            viewport={{ once: true, amount: 0.75 }}
-            className="flex justify-center md:p-3 lg:p-5"
-          >
-            <Link to="/projects">
-              <button className="flex items-center text-center py-2 px-4 text-lg md:text-xl my-4 transition-all hover:-translate-1 bg-blue-700 hover:bg-blue-800 hover:scale-110 duration-500 rounded-md">
-                <HiExternalLink className="me-2" />
-                <span>More Projects</span>
-              </button>
-            </Link>
-          </motion.div>
         </div>
       </section>
     </div>

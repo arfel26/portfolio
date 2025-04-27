@@ -31,7 +31,7 @@ function Contact() {
     <div>
       <section
         id="contact"
-        className="contact mx-6 md:mx-auto md:w-11/12 lg:max-w-screen-2xl flex flex-wrap items-center justify-center"
+        className="contact md:mx-auto md:w-11/12 lg:max-w-screen-2xl flex flex-wrap items-center justify-center min-h-screen"
       >
         <div className="flex flex-col p-5 text-gray-200 space-y-5">
           <motion.h1

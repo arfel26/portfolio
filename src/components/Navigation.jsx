@@ -1,21 +1,11 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
-  };
-
-  const handleScroll = (e) => {
-    e.preventDefault();
-    const targetId = e.currentTarget.getAttribute("href");
-    const targetSection = document.querySelector(targetId);
-
-    if (targetSection) {
-      targetSection.scrollIntoView({ behavior: "smooth" });
-      setIsOpen(false);
-    }
   };
 
   return (
@@ -56,40 +46,28 @@ function Navigation() {
           >
             <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 ">
               <li>
-                <a
-                  href="#about"
+                <Link
+                  to="/"
                   className="block py-2 px-3 transition-all hover:-translate-1 hover:text-blue-700 duration-500"
-                  onClick={handleScroll}
                 >
-                  About
-                </a>
+                  Home
+                </Link>
               </li>
               <li>
-                <a
-                  href="#skills"
+                <Link
+                  to="/projects"
                   className="block py-2 px-3 transition-all hover:-translate-1 hover:text-blue-700 duration-500"
-                  onClick={handleScroll}
-                >
-                  Skills
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#projects"
-                  className="block py-2 px-3 transition-all hover:-translate-1 hover:text-blue-700 duration-500"
-                  onClick={handleScroll}
                 >
                   Projects
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#contact"
+                <Link
+                  to="/contact"
                   className="block py-2 px-3 transition-all hover:-translate-1 hover:text-blue-700 duration-500"
-                  onClick={handleScroll}
                 >
                   Contact
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

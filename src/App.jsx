@@ -1,26 +1,30 @@
 // import React from "react";
-import About from "./components/About";
-import Contact from "./components/Contact";
+
 import Footer from "./components/Footer";
 import Navigation from "./components/Navigation";
-import Projects from "./components/Projects";
-import Skills from "./components/Skills";
-import Services from "./components/Services";
 import "./index.css";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import Projects from "./pages/Projects";
+import ContactMe from "./pages/ContactMe";
 
 function App() {
   return (
-    <div className="bg-gray-950 space-y-8">
-      <Navigation />
-      <div className="space-y-8 md:space-y-16 lg:space-y-20">
-        <About />
-        <Skills />
-        <Services />
-        <Projects />
-        <Contact />
-        <Footer />
+    <>
+      <div className="bg-gray-950 space-y-8">
+        <BrowserRouter basename="/portfolio/">
+          <Navigation />
+          <div className="space-y-8 md:space-y-16 lg:space-y-20">
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/projects" element={<Projects />} />
+              <Route path="/contact" element={<ContactMe />} />
+            </Routes>
+            <Footer />
+          </div>
+        </BrowserRouter>
       </div>
-    </div>
+    </>
   );
 }
 
