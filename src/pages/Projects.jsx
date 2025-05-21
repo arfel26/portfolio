@@ -36,6 +36,50 @@ function Projects() {
               className="grid grid-cols-1 lg:grid-cols-2 md:p-3 lg:p-5 gap-4"
             >
               <div className="border-4 border-blue-700 m-auto">
+                <img src="ulamgen.png" alt="" />
+              </div>
+              <div className="md:p-3 space-y-2 md:space-y-4 text-justify">
+                <h1 className="text-xl md:text-3xl">Ulam Generator</h1>
+                <div className="flex flex-wrap justify-start text-base md:text-xl lg:text-2xl">
+                  {[
+                    "React.js (Vite.js)",
+                    "Node.js (Express.js)",
+                    "TailwindCSS",
+                  ].map((progLanguage) => (
+                    <h1 className="text-lg px-2 py-1 transition-all hover:-translate-1 hover:scale-110 border-2 border-blue-700 duration-500 cursor-pointer rounded-md ml-0 mr-3 my-1">
+                      {progLanguage}
+                    </h1>
+                  ))}
+                </div>
+                <p className="text-lg md:text-2xl">
+                  A web app that suggests Filipino dishes based on the
+                  ingredients you have at home. Simply input your available
+                  ingredients, click "Generate Dish," and the app will recommend
+                  meals you can cook — complete with ingredients and recipe
+                  links.
+                </p>
+                <div className="buttons space-x-3">
+                  <a
+                    href="https://drive.google.com/file/d/1ZxVTRn9xYjfMKxub-233cE5-6yUaSsmB/view?usp=sharing"
+                    target="_blank"
+                    className=""
+                  >
+                    <button className="flex items-center text-center py-2 px-4 text-lg md:text-xl my-4 transition-all hover:-translate-1 bg-blue-700 hover:bg-blue-800 hover:scale-110 duration-500 rounded-md">
+                      <HiExternalLink className="me-2" />
+                      <span>Walkthrough</span>
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </motion.div>
+            <motion.div
+              variants={fadeIn("down", 0.1)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: true, amount: 0.25 }}
+              className="grid grid-cols-1 lg:grid-cols-2 md:p-3 lg:p-5 gap-4"
+            >
+              <div className="border-4 border-blue-700 m-auto">
                 <img src="smartaccess.png" alt="" />
               </div>
               <div className="md:p-3 space-y-2 md:space-y-4 text-justify">
